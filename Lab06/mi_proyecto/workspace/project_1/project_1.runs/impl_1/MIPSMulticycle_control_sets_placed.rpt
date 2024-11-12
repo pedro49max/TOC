@@ -1,0 +1,118 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec 13 14:24:48 2023
+| Host         : PROFES10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MIPSMulticycle_control_sets_placed.rpt
+| Design       : MIPSMulticycle
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    17 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    38 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              42 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1201 |          507 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                  Enable Signal                 |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                |                                  |                1 |              2 |         2.00 |
+|  DBG/dbg_clk   | CU/FSM_onehot_currentState[14]_i_1_n_0         | DP/register_bank/rst_n           |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG |                                                | DP/register_bank/rst_n           |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG |                                                | DBG/DBC/b0_mek_ra_reg[1]_inv_n_0 |                7 |             22 |         3.14 |
+|  DBG/dbg_clk   | CU/control[10]                                 | DP/register_bank/rst_n           |               16 |             32 |         2.00 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[15]_7[0]                    | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | CU/control[8]                                  | DP/register_bank/rst_n           |               22 |             32 |         1.45 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[17]_0[0]                    | DP/register_bank/rst_n           |               19 |             32 |         1.68 |
+|  DBG/dbg_clk   | DP/reg_IR/E[0]                                 | DP/register_bank/rst_n           |               18 |             32 |         1.78 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[7]_3[0]  | DP/register_bank/rst_n           |               16 |             32 |         2.00 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[14][0]   | DP/register_bank/rst_n           |               16 |             32 |         2.00 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[7]_0[0]  | DP/register_bank/rst_n           |               12 |             32 |         2.67 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[7][0]    | DP/register_bank/rst_n           |               14 |             32 |         2.29 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[7]_2[0]  | DP/register_bank/rst_n           |                9 |             32 |         3.56 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[14]_0[0] | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | DP/reg_IR/FSM_onehot_currentState_reg[7]_1[0]  | DP/register_bank/rst_n           |               12 |             32 |         2.67 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[14]_4[0]                    | DP/register_bank/rst_n           |               14 |             32 |         2.29 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_5[0]                    | DP/register_bank/rst_n           |               14 |             32 |         2.29 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[13]_1[0]                    | DP/register_bank/rst_n           |               14 |             32 |         2.29 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[14]_0[0]                    | DP/register_bank/rst_n           |               17 |             32 |         1.88 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[15]_3[0]                    | DP/register_bank/rst_n           |               20 |             32 |         1.60 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[15]_1[0]                    | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[15]_4[0]                    | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_2[0]                    | DP/register_bank/rst_n           |               18 |             32 |         1.78 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[12]_2[0]                    | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_3[0]                    | DP/register_bank/rst_n           |               18 |             32 |         1.78 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_4[0]                    | DP/register_bank/rst_n           |               12 |             32 |         2.67 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_0[0]                    | DP/register_bank/rst_n           |               12 |             32 |         2.67 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[12]_1[0]                    | DP/register_bank/rst_n           |                9 |             32 |         3.56 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[13]_0[0]                    | DP/register_bank/rst_n           |               16 |             32 |         2.00 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[12]_4[0]                    | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[15]_2[0]                    | DP/register_bank/rst_n           |               11 |             32 |         2.91 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[14]_3[0]                    | DP/register_bank/rst_n           |               19 |             32 |         1.68 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_1[0]                    | DP/register_bank/rst_n           |                8 |             32 |         4.00 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[11]_6[0]                    | DP/register_bank/rst_n           |               13 |             32 |         2.46 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[12]_3[0]                    | DP/register_bank/rst_n           |               13 |             32 |         2.46 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[15]_8[0]                    | DP/register_bank/rst_n           |                8 |             32 |         4.00 |
+|  DBG/dbg_clk   | DP/reg_IR/dout_reg[17]_1[0]                    | DP/register_bank/rst_n           |                9 |             32 |         3.56 |
+|  DBG/dbg_clk   | CU/control[2]                                  | DP/register_bank/rst_n           |               12 |             34 |         2.83 |
+|  DBG/dbg_clk   | CU/control[6]                                  | DP/register_bank/rst_n           |               25 |             64 |         2.56 |
++----------------+------------------------------------------------+----------------------------------+------------------+----------------+--------------+
+
+

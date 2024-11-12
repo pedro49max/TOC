@@ -1,0 +1,15 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/ALU.vhd,1702473766,vhdl,,,,alu,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/BlockRam.vhd,1702473770,vhdl,,,,blockram,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/controlUnit.vhd,1702473776,vhdl,,,,controlunit,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd,1702234098,vhdl,,,,datapath,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/memory.vhd,1701361572,vhdl,,,,memory,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd,1701361572,vhdl,,,,multiplexer2to1,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/multiplexer4to1.vhd,1701361572,vhdl,,,,multiplexer4to1,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/register.vhd,1701361572,vhdl,,,,reg,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/rtl/registerBank.vhd,1701361572,vhdl,,,,registerbank,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/sim/TestBenchMIPSMulticycle.vhd,1702232496,vhdl,,,,testbenchmipsmulticycle,,,,,,,,
+E:/TOC/Lab06/mi_proyecto/rtl/sim/mips_dut.vhd,1702234010,vhdl,,,,mips_dut,,,,,,,,

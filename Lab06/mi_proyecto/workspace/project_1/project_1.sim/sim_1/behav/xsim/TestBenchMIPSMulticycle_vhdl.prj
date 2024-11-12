@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../rtl/rtl/ALU.vhd" \
+"../../../../../../rtl/rtl/BlockRam.vhd" \
+"../../../../../../rtl/rtl/controlUnit.vhd" \
+"../../../../../../rtl/rtl/dataPath.vhd" \
+"../../../../../../rtl/rtl/memory.vhd" \
+"../../../../../../rtl/sim/mips_dut.vhd" \
+"../../../../../../rtl/rtl/multiplexer2to1.vhd" \
+"../../../../../../rtl/rtl/multiplexer4to1.vhd" \
+"../../../../../../rtl/rtl/register.vhd" \
+"../../../../../../rtl/rtl/registerBank.vhd" \
+"../../../../../../rtl/sim/TestBenchMIPSMulticycle.vhd" \
+
+# Do not sort compile order
+nosort

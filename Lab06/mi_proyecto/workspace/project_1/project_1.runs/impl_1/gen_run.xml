@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1702473806">
+  <File Type="ROUTE-PWR" Name="MIPSMulticycle_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MIPSMulticycle.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="MIPSMulticycle_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MIPSMulticycle_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="MIPSMulticycle.msk"/>
+  <File Type="ROUTE-CLK" Name="MIPSMulticycle_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="MIPSMulticycle.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MIPSMulticycle_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="MIPSMulticycle.bit"/>
+  <File Type="BG-DRC" Name="MIPSMulticycle.drc"/>
+  <File Type="BG-BGN" Name="MIPSMulticycle.bgn"/>
+  <File Type="BG-BIN" Name="MIPSMulticycle.bin"/>
+  <File Type="BITSTR-RBT" Name="MIPSMulticycle.rbt"/>
+  <File Type="BITSTR-NKY" Name="MIPSMulticycle.nky"/>
+  <File Type="BITSTR-BMM" Name="MIPSMulticycle_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="MIPSMulticycle.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MIPSMulticycle_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="MIPSMulticycle.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MIPSMulticycle_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MIPSMulticycle.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="MIPSMulticycle_soc.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="MIPSMulticycle.npi"/>
+  <File Type="OPT-DRC" Name="MIPSMulticycle_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="MIPSMulticycle.rbd"/>
+  <File Type="OPT-HWDEF" Name="MIPSMulticycle.hwdef"/>
+  <File Type="PLACE-IO" Name="MIPSMulticycle_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MIPSMulticycle_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MIPSMulticycle_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MIPSMulticycle_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MIPSMulticycle_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="MIPSMulticycle_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MIPSMulticycle_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MIPSMulticycle_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MIPSMulticycle_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MIPSMulticycle_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="MIPSMulticycle_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MIPSMulticycle_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MIPSMulticycle_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MIPSMulticycle_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MIPSMulticycle_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MIPSMulticycle_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="MIPSMulticycle_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MIPSMulticycle_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MIPSMulticycle_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MIPSMulticycle_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="MIPSMulticycle_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="MIPSMulticycle_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="MIPSMulticycle_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MIPSMulticycle_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="MIPSMulticycle_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MIPSMulticycle_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MIPSMulticycle_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MIPSMulticycle_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MIPSMulticycle_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MIPSMulticycle_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MIPSMulticycle_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MIPSMulticycle_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="MIPSMulticycle_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MIPSMulticycle_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="MIPSMulticycle.pdi"/>
+  <File Type="PL-PDI-FILE" Name="MIPSMulticycle_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="MIPSMulticycle.rcfi"/>
+  <File Type="CFI_FILE" Name="MIPSMulticycle.cfi"/>
+  <File Type="RNPI_FILE" Name="MIPSMulticycle.rnpi"/>
+  <File Type="ROUTE-RQS" Name="MIPSMulticycle_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="MIPSMulticycle_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../rtl/rtl/ALU.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/BlockRam.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/controlUnit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/debugger/conv_7seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/dataPath.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/debugger/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/debugger/switch.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/debugger/displays.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/debugger/debugger.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/memory.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/multiplexer2to1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/multiplexer4to1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/registerBank.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/rtl/MIPSMulticycle.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MIPSMulticycle"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../rtl/cfg/basys3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/MIPSMulticycle.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

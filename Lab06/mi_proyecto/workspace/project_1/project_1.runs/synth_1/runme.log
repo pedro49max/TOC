@@ -1,0 +1,397 @@
+
+*** Running vivado
+    with args -log MIPSMulticycle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPSMulticycle.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source MIPSMulticycle.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/workspace/project_1/project_1.srcs/utils_1/imports/synth_1/MIPSMulticycle.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/workspace/project_1/project_1.srcs/utils_1/imports/synth_1/MIPSMulticycle.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MIPSMulticycle -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12320
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2762.621 ; gain = 413.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSMulticycle' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/MIPSMulticycle.vhd:16]
+INFO: [Synth 8-3491] module 'controlUnit' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/controlUnit.vhd:5' bound to instance 'CU' of component 'controlUnit' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/MIPSMulticycle.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'controlUnit' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/controlUnit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'controlUnit' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/controlUnit.vhd:16]
+INFO: [Synth 8-3491] module 'dataPath' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:5' bound to instance 'DP' of component 'dataPath' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/MIPSMulticycle.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'dataPath' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:26]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:4' bound to instance 'reg_PC' of component 'reg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:143]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:17]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:17]
+INFO: [Synth 8-3491] module 'multiplexer2to1' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:4' bound to instance 'mux_IorD' of component 'multiplexer2to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'multiplexer2to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:16]
+	Parameter bits_inputs bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexer2to1' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:16]
+INFO: [Synth 8-3491] module 'memory' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/memory.vhd:4' bound to instance 'mem' of component 'memory' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'memory' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/memory.vhd:15]
+INFO: [Synth 8-3491] module 'BlockRam' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/BlockRam.vhd:5' bound to instance 'mem' of component 'BlockRam' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/memory.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'BlockRam' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/BlockRam.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'BlockRam' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/BlockRam.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'memory' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/memory.vhd:15]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:4' bound to instance 'reg_IR' of component 'reg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:149]
+	Parameter bits_inputs bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexer2to1' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:4' bound to instance 'mux_RW' of component 'multiplexer2to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'multiplexer2to1__parameterized1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:16]
+	Parameter bits_inputs bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexer2to1__parameterized1' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:16]
+INFO: [Synth 8-3491] module 'multiplexer2to1' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:4' bound to instance 'mux_MDR' of component 'multiplexer2to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:153]
+INFO: [Synth 8-3491] module 'registerBank' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/registerBank.vhd:5' bound to instance 'register_bank' of component 'registerBank' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'registerBank' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/registerBank.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'registerBank' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/registerBank.vhd:19]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:4' bound to instance 'reg_A' of component 'reg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:164]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:4' bound to instance 'reg_B' of component 'reg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:166]
+INFO: [Synth 8-3491] module 'multiplexer2to1' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer2to1.vhd:4' bound to instance 'mux_opA' of component 'multiplexer2to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:168]
+INFO: [Synth 8-3491] module 'multiplexer4to1' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer4to1.vhd:4' bound to instance 'mux_opB' of component 'multiplexer4to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'multiplexer4to1' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer4to1.vhd:18]
+	Parameter bits_inputs bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplexer4to1' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/multiplexer4to1.vhd:18]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/ALU.vhd:5' bound to instance 'ALU_i' of component 'ALU' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/ALU.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/ALU.vhd:16]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/register.vhd:4' bound to instance 'reg_ALUout' of component 'reg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'dataPath' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/dataPath.vhd:26]
+INFO: [Synth 8-3491] module 'debugger' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debugger.vhd:39' bound to instance 'DBG' of component 'debugger' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/MIPSMulticycle.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'debugger' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debugger.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debouncer.vhd:53]
+	Parameter G_CLKFREQ_MHZ bound to: 100.000000 - type: double 
+	Parameter G_PULSE_MS bound to: 20.000000 - type: double 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debouncer.vhd:53]
+INFO: [Synth 8-113] binding component instance 'BUFGCE_inst' to cell 'BUFGCE' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debugger.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'switch_dbg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/switch.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'switch_dbg' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/switch.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'displays' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/displays.vhd:20]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_0' of component 'conv_7seg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/displays.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'conv_7seg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/conv_7seg.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/conv_7seg.vhd:9]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_1' of component 'conv_7seg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/displays.vhd:37]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_2' of component 'conv_7seg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/displays.vhd:38]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_3' of component 'conv_7seg' [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/displays.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'displays' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/displays.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'debugger' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debugger.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'MIPSMulticycle' (0#1) [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/MIPSMulticycle.vhd:16]
+WARNING: [Synth 8-7129] Port ADDR[31] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[30] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[29] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[28] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[27] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[26] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[25] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[24] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[23] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[22] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[21] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[20] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[19] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[18] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[17] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[16] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[15] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[14] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[13] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[12] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[11] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2860.484 ; gain = 511.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2878.359 ; gain = 529.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2878.359 ; gain = 529.117
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2887.789 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'DBG/BUFGCE_inst' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/cfg/basys3.xdc]
+Finished Parsing XDC File [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/cfg/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/cfg/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPSMulticycle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPSMulticycle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2988.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2988.477 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'controlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                  000000000000001 |                             0000
+                      s1 |                  000000000000010 |                             0001
+                      s2 |                  000000000000100 |                             0010
+                      s8 |                  000000000001000 |                             1000
+                      s9 |                  000000000010000 |                             1001
+                      s3 |                  000000000100000 |                             0011
+                      s4 |                  000000001000000 |                             0100
+                      s5 |                  000000010000000 |                             0101
+                      s6 |                  000000100000000 |                             0110
+                      s7 |                  000001000000000 |                             0111
+                     s10 |                  000010000000000 |                             1010
+                     s11 |                  000100000000000 |                             1011
+                     s12 |                  001000000000000 |                             1100
+                     s13 |                  010000000000000 |                             1101
+                     s14 |                  100000000000000 |                             1110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'controlUnit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 38    
+	               21 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit	(512 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	  15 Input   16 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 1     
+	   6 Input   15 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|DP          | mem/mem/ram_reg | 512 x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|DP          | mem/mem/ram_reg | 512 x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance DP/mem/mem/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DP/mem/mem/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5410] Found another clock driver \DBG/BUFGCE_inst :O [C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/rtl/rtl/debugger/debugger.vhd:105]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |BUFGCE   |     1|
+|3     |CARRY4   |    26|
+|4     |LUT1     |     3|
+|5     |LUT2     |    35|
+|6     |LUT3     |    90|
+|7     |LUT4     |    90|
+|8     |LUT5     |    84|
+|9     |LUT6     |   920|
+|10    |MUXF7    |   256|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |  1202|
+|13    |FDPE     |     1|
+|14    |FDRE     |    44|
+|15    |IBUF     |    18|
+|16    |OBUF     |    11|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2988.477 ; gain = 639.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2988.477 ; gain = 529.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2988.477 ; gain = 639.234
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2988.477 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'DBG/BUFGCE_inst' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 284 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2988.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instance 
+
+Synth Design complete | Checksum: a0b68ee7
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2988.477 ; gain = 1016.758
+INFO: [Common 17-1381] The checkpoint 'C:/Users/usuario_local/Downloads/Lab06/mi_proyecto/workspace/project_1/project_1.runs/synth_1/MIPSMulticycle.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPSMulticycle_utilization_synth.rpt -pb MIPSMulticycle_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 14:24:13 2023...
