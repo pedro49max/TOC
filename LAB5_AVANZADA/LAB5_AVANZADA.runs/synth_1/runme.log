@@ -1,0 +1,309 @@
+
+*** Running vivado
+    with args -log sintesis_tragaperras.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sintesis_tragaperras.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source sintesis_tragaperras.tcl -notrace
+Command: synth_design -top sintesis_tragaperras -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1968
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2758.062 ; gain = 409.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sintesis_tragaperras' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/sintesis_tragaperras.vhd:17]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'debouncerInsts_displayce1' of component 'debouncer' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/sintesis_tragaperras.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/Debouncer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/Debouncer.vhd:16]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'debouncerInsts_displayce2' of component 'debouncer' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/sintesis_tragaperras.vhd:65]
+INFO: [Synth 8-3491] module 'tragaperras' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/tragaperras.vhd:4' bound to instance 'tragaperrasInsts_displayce' of component 'tragaperras' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/sintesis_tragaperras.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'tragaperras' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/tragaperras.vhd:16]
+INFO: [Synth 8-3491] module 'data_path' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:6' bound to instance 'MOD_DATAPATH' of component 'data_path' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/tragaperras.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:15]
+INFO: [Synth 8-3491] module 'divisor' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/divisor.vhd:5' bound to instance 'MOD_DIVISOR' of component 'divisor' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'divisor' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/divisor.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'divisor' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/divisor.vhd:13]
+INFO: [Synth 8-3491] module 'cont10_1' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/cont10_1.vhd:5' bound to instance 'MOD_CONT_2HZ' of component 'cont10_1' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'cont10_1' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/cont10_1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'cont10_1' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/cont10_1.vhd:12]
+INFO: [Synth 8-3491] module 'cont10_1' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/cont10_1.vhd:5' bound to instance 'MOD_CONT1' of component 'cont10_1' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:75]
+INFO: [Synth 8-3491] module 'cont10_1' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/cont10_1.vhd:5' bound to instance 'MOD_CONT2' of component 'cont10_1' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:77]
+INFO: [Synth 8-3491] module 'generador_efectos' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:4' bound to instance 'MOD_GEN_SECUENCIAS' of component 'generador_efectos' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'generador_efectos' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:12]
+INFO: [Synth 8-3491] module 'registro_desplazamiento' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/registro_desplazamiento.vhd:4' bound to instance 'SEC_ATRAER_CLIENTES' of component 'registro_desplazamiento' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'registro_desplazamiento' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/registro_desplazamiento.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'registro_desplazamiento' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/registro_desplazamiento.vhd:11]
+INFO: [Synth 8-3491] module 'biestable' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/biestable.vhd:4' bound to instance 'SEC_PIERDE_GANA' of component 'biestable' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'biestable' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/biestable.vhd:12]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/biestable.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'biestable' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/biestable.vhd:12]
+WARNING: [Synth 8-614] signal 'leds_atraer_clientes' is read in the process but is not in the sensitivity list [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:34]
+WARNING: [Synth 8-614] signal 'leds_pierde_gana' is read in the process but is not in the sensitivity list [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'generador_efectos' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/gen_secuencias.vhd:12]
+INFO: [Synth 8-637] synthesizing blackbox instance 'MOD_MEM_CONT1' of component 'p5_mem' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:83]
+INFO: [Synth 8-637] synthesizing blackbox instance 'MOD_MEM_CONT2' of component 'blk_mem_gen_0' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/RutaDeDatos.vhd:15]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/UControl.vhd:4' bound to instance 'MOD_CONTROLLER' of component 'controller' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/tragaperras.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/UControl.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'controller' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/UControl.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'tragaperras' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/tragaperras.vhd:16]
+INFO: [Synth 8-3491] module 'displays' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:7' bound to instance 'displays_inst' of component 'displays' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/sintesis_tragaperras.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'displays' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:20]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_0' of component 'conv_7seg' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'conv_7seg' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/conv_7seg.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/conv_7seg.vhd:9]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_1' of component 'conv_7seg' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:37]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_2' of component 'conv_7seg' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:38]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/conv_7seg.vhd:4' bound to instance 'conv_7seg_digito_3' of component 'conv_7seg' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'displays' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/displays.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sintesis_tragaperras' (0#1) [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/sintesis_tragaperras.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2849.934 ; gain = 501.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2867.855 ; gain = 519.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2867.855 ; gain = 519.445
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2867.855 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/usuario_local/project_5/project_5.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/usuario_local/project_5/project_5.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/usuario_local/project_5/project_5.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sintesis_tragaperras_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sintesis_tragaperras_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2980.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2980.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waitingpression |                               00 |                               00
+      pressiondebouncing |                               01 |                               01
+       waitingdepression |                               10 |                               10
+    depressiondebouncing |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer'
+WARNING: [Synth 8-327] inferring latch for variable 'enables_aux_reg' [C:/Users/usuario_local/project_5/project_5.srcs/sources_1/new/UControl.vhd:17]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s3 |                              011 |                              011
+                      s4 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 3     
+	   4 Input    7 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (debouncerInsts_displayce1/FSM_sequential_state_reg[1]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (debouncerInsts_displayce1/FSM_sequential_state_reg[0]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (debouncerInsts_displayce2/FSM_sequential_state_reg[1]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (debouncerInsts_displayce2/FSM_sequential_state_reg[0]) is unused and will be removed from module sintesis_tragaperras.
+WARNING: [Synth 8-3332] Sequential element (tragaperrasInsts_displayce/MOD_CONTROLLER/FSM_sequential_STATE_reg[2]) is unused and will be removed from module sintesis_tragaperras.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |p5_mem        |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |blk_mem_gen_0_bbox |     1|
+|2     |p5_mem_bbox        |     1|
+|3     |BUFG               |     2|
+|4     |CARRY4             |    26|
+|5     |LUT1               |     6|
+|6     |LUT2               |    95|
+|7     |LUT3               |    10|
+|8     |LUT4               |    44|
+|9     |LUT5               |     1|
+|10    |LUT6               |    24|
+|11    |FDCE               |   125|
+|12    |FDRE               |    22|
+|13    |LD                 |     3|
+|14    |IBUF               |     4|
+|15    |OBUF               |    27|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2980.562 ; gain = 519.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2980.562 ; gain = 632.152
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2980.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2980.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+Synth Design complete | Checksum: 56324a5b
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2980.562 ; gain = 1034.609
+INFO: [Common 17-1381] The checkpoint 'C:/Users/usuario_local/project_5AVANZADA/project_5AVANZADA.runs/synth_1/sintesis_tragaperras.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sintesis_tragaperras_utilization_synth.rpt -pb sintesis_tragaperras_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 14:04:08 2023...
