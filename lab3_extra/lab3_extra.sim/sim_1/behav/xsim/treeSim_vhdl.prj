@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab3_extra.srcs/sources_1/new/comparator.vhd" \
+"../../../../lab3_extra.srcs/sources_1/new/reg.vhd" \
+"../../../../lab3_extra.srcs/sources_1/new/treeComparator.vhd" \
+"../../../../lab3_extra.srcs/sim_1/new/treeSim.vhd" \
+
+# Do not sort compile order
+nosort
