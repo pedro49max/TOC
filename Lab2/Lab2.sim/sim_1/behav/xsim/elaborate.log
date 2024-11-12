@@ -1,0 +1,8 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/software/electronica/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot simLab2_behav xil_defaultlib.simLab2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <boton> does not exist in entity <FSM>.  Please compare the definition of block <FSM> to its component declaration and its instantion to detect the mismatch. [D:/TOC/Lab2/Lab2.srcs/sim_1/new/simLab2.vhd:15]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit simlab2 in library work failed.

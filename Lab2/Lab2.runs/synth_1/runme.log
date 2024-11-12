@@ -1,0 +1,289 @@
+
+*** Running vivado
+    with args -log fushion.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fushion.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fushion.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1946.359 ; gain = 197.926
+Command: read_checkpoint -auto_incremental -incremental D:/TOC/Lab2/Lab2.srcs/utils_1/imports/synth_1/FSM.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/TOC/Lab2/Lab2.srcs/utils_1/imports/synth_1/FSM.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fushion -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17924
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2760.973 ; gain = 409.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fushion' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/fushion.vhd:19]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'D:/TOC/2-DigLock_files/debouncer.vhd:5' bound to instance 'MOD_debouncer' of component 'debouncer' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/fushion.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/TOC/2-DigLock_files/debouncer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [D:/TOC/2-DigLock_files/debouncer.vhd:16]
+INFO: [Synth 8-3491] module 'debouncer2' declared at 'D:/TOC/Lab2/Lab2.srcs/sources_1/new/debouncer2.vhd:5' bound to instance 'MOD_debouncer2' of component 'debouncer2' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/fushion.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'debouncer2' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/debouncer2.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'debouncer2' (0#1) [D:/TOC/Lab2/Lab2.srcs/sources_1/new/debouncer2.vhd:16]
+INFO: [Synth 8-3491] module 'FSM' declared at 'D:/TOC/Lab2/Lab2.srcs/sources_1/new/FSM.vhd:4' bound to instance 'MOD_FSM' of component 'FSM' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/fushion.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'FSM' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/FSM.vhd:16]
+INFO: [Synth 8-3491] module 'reg' declared at 'D:/TOC/Lab2/Lab2.srcs/sources_1/new/register.vhd:4' bound to instance 'MOD_REG' of component 'reg' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/FSM.vhd:37]
+INFO: [Synth 8-638] synthesizing module '\reg ' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/register.vhd:12]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [D:/TOC/Lab2/Lab2.srcs/sources_1/new/register.vhd:12]
+INFO: [Synth 8-3491] module 'comparator' declared at 'D:/TOC/Lab2/Lab2.srcs/sources_1/new/comparator.vhd:4' bound to instance 'MOD_COMPARATOR' of component 'comparator' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/FSM.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'comparator' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/comparator.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (0#1) [D:/TOC/Lab2/Lab2.srcs/sources_1/new/comparator.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [D:/TOC/Lab2/Lab2.srcs/sources_1/new/FSM.vhd:16]
+INFO: [Synth 8-3491] module 'conv_7seg' declared at 'D:/TOC/2-DigLock_files/conv_7seg.vhd:4' bound to instance 'MOD_conv_7seg' of component 'conv_7seg' [D:/TOC/Lab2/Lab2.srcs/sources_1/new/fushion.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'conv_7seg' [D:/TOC/2-DigLock_files/conv_7seg.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'conv_7seg' (0#1) [D:/TOC/2-DigLock_files/conv_7seg.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'fushion' (0#1) [D:/TOC/Lab2/Lab2.srcs/sources_1/new/fushion.vhd:19]
+WARNING: [Synth 8-3917] design fushion has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design fushion has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design fushion has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design fushion has port an[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2852.957 ; gain = 501.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2870.867 ; gain = 519.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2870.867 ; gain = 519.520
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2870.867 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/TOC/pins.xdc]
+Finished Parsing XDC File [D:/TOC/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/TOC/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fushion_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fushion_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2977.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2977.520 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'controller.state_reg' in module 'debouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'controller.state_reg' in module 'debouncer2'
+INFO: [Synth 8-802] inferred FSM for state register 'actual_STATE_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waitingpression |                               00 |                               00
+      pressiondebouncing |                               01 |                               01
+       waitingdepression |                               10 |                               10
+    depressiondebouncing |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'controller.state_reg' using encoding 'sequential' in module 'debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         waitingpression |                               00 |                               00
+      pressiondebouncing |                               01 |                               01
+       waitingdepression |                               10 |                               10
+    depressiondebouncing |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'controller.state_reg' using encoding 'sequential' in module 'debouncer2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 initial |                            00001 |                              000
+                   three |                            00010 |                              001
+                     two |                            00100 |                              010
+                     one |                            01000 |                              011
+                   final |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'actual_STATE_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 7     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design fushion has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design fushion has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design fushion has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design fushion has port an[0] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (MOD_FSM/FSM_onehot_actual_STATE_reg[4]) is unused and will be removed from module fushion.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT3   |     6|
+|4     |LUT4   |    54|
+|5     |LUT5   |     8|
+|6     |LUT6   |     8|
+|7     |FDRE   |    59|
+|8     |FDSE   |     1|
+|9     |IBUF   |    12|
+|10    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 2977.520 ; gain = 519.520
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2977.520 ; gain = 626.172
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2977.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2977.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8c3f817d
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 2977.520 ; gain = 1006.320
+INFO: [Common 17-1381] The checkpoint 'D:/TOC/Lab2/Lab2.runs/synth_1/fushion.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fushion_utilization_synth.rpt -pb fushion_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 11 15:10:17 2023...
